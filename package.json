@@ -1,0 +1,35 @@
+{
+  "name": "couchbase-utils",
+  "version": "1.0.0",
+  "description": "Convenience functions to better work with Couchbase SDK.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --check-leaks --globals bucket,utils"
+  },
+  "author": "Bloutiouf <bloutiouf@gmail.com> (http://bloutiouf.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.4.0",
+    "couchbase": "^2.0.10",
+    "directory-contents": "^2.0.0",
+    "object-hash": "^0.8.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bloutiouf/couchbase-utils.git"
+  },
+  "keywords": [
+    "couchbase",
+    "couchnode"
+  ],
+  "bugs": {
+    "url": "https://github.com/Bloutiouf/couchbase-utils/issues"
+  },
+  "homepage": "https://github.com/Bloutiouf/couchbase-utils"
+}

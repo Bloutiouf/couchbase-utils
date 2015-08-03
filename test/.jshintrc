@@ -1,0 +1,8 @@
+{
+	"globals": {
+		"bucket": true,
+		"emit": false,
+		"utils": true
+	},
+	"mocha": true
+}
