@@ -21,6 +21,17 @@ Convenience functions to better work with [Couchbase Node.js SDK](https://github
 
 I discovered some bugs in the implementation regarding the queries and the mock. Until [this PR is merged](https://github.com/couchbase/couchnode/pull/27), I strongly recommend to set `fix` to `true`, in order to fix those behaviors.
 
+	var cluster = new couchbase.Cluster('couchbase://localhost');
+	var bucket = cluster.openBucket('test', function(err) {
+		if (err) return callback(err);
+		var utils = couchbaseUtils({
+			bucket: bucket,
+			ddocsPath: path.join(__dirname, 'ddocs'),
+			fix: true,
+		});
+		return callback(null, bucket, utils);
+	});
+
 ## utils.Multi
 
 Multi is a class for executing functions in the context of retrieved documents.  
